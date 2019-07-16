@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Audio</string>
+		<key>priorities</key>
+		<dict>
+			<key>A2DP Control</key>
+			<integer>7</integer>
+			<key>SBC Audio Data</key>
+			<integer>3</integer>
+			<key>SCO Audio Data</key>
+			<integer>3</integer>
+			<key>AptX Audio Data</key>
+			<integer>3</integer>
+			<key>AAC Audio Data</key>
+			<integer>3</integer>
+			<key>AAPDecoder</key>
+			<integer>6</integer>
+			<key>HCI Event:Inquiry Result - EIR</key>
+			<integer>3</integer>
+			<key>HCI Event:Inquiry Result</key>
+			<integer>3</integer>
+			<key>AVCTP</key>
+			<integer>6</integer>
+			<key>AVDTP</key>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>HID</string>
+		<key>priorities</key>
+		<dict>
+			<key>HIDInterrupt</key>
+			<integer>4</integer>
+			<key>HIDControl</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>LE</string>
+		<key>priorities</key>
+		<dict>
+			<key>SMPDecoder</key>
+			<integer>6</integer>
+			<key>ATTDecoder</key>
+			<integer>5</integer>
+			<key>HCI Event:LE Meta Event:Advertising Report</key>
+			<integer>3</integer>
+			<key>HCI Event:LE Meta Event</key>
+			<integer>3</integer>
+			<key>HCI Command:LE Set Scan Enable</key>
+			<integer>6</integer>
+			<key>HCI Command:LE Set Scan Parameters</key>
+			<integer>6</integer>
+			<key>HCI Command:LE Start Encryption</key>
+			<integer>7</integer>
+			<key>HCI Command:LE Set Random Address</key>
+			<integer>6</integer>
+			<key>HCI Command:LE Set Event Mask</key>
+			<integer>6</integer>
+			<key>HCI Command:LE Create Connection</key>
+			<integer>7</integer>
+			<key>HCI Command:LE Remove Device From White List</key>
+			<integer>7</integer>
+			<key>HCI Command:Vendor Specific Command [FD4D]</key>
+			<integer>6</integer>
+			<key>HCI Command:Vendor Specific Command [FD4A]</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kernel</string>
+		<key>priorities</key>
+		<dict>
+			<key>HCI Event:Number of Completed Packets</key>
+			<integer>2</integer>
+			<key>Kernel Debug</key>
+			<integer>2</integer>
+			<key>Kernel</key>
+			<integer>3</integer>
+			<key>LinkManagerProtocol</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+</array>
+</plist>
