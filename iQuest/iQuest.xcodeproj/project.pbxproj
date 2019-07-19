@@ -10,7 +10,6 @@
 		C104637E22DABF1B00C9258B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C104637D22DABF1B00C9258B /* ThirdViewController.swift */; };
 		C104638022DABF7E00C9258B /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C104637F22DABF7E00C9258B /* FourthViewController.swift */; };
 		C104638222DABF8C00C9258B /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C104638122DABF8C00C9258B /* FifthViewController.swift */; };
-		C104638822DAEA2900C9258B /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C104638722DAEA2900C9258B /* TableCell.swift */; };
 		C1B62C5622DA2BFC006462E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B62C5522DA2BFC006462E9 /* AppDelegate.swift */; };
 		C1B62C5822DA2BFC006462E9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B62C5722DA2BFC006462E9 /* FirstViewController.swift */; };
 		C1B62C5A22DA2BFC006462E9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B62C5922DA2BFC006462E9 /* SecondViewController.swift */; };
@@ -34,7 +33,6 @@
 		C104637D22DABF1B00C9258B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		C104637F22DABF7E00C9258B /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		C104638122DABF8C00C9258B /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
-		C104638722DAEA2900C9258B /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		C1B62C5222DA2BFC006462E9 /* iQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B62C5522DA2BFC006462E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B62C5722DA2BFC006462E9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				C104637D22DABF1B00C9258B /* ThirdViewController.swift */,
 				C104637F22DABF7E00C9258B /* FourthViewController.swift */,
 				C104638122DABF8C00C9258B /* FifthViewController.swift */,
-				C104638722DAEA2900C9258B /* TableCell.swift */,
 				C1B62C5B22DA2BFC006462E9 /* Main.storyboard */,
 				C1B62C5E22DA2BFE006462E9 /* Assets.xcassets */,
 				C1B62C6022DA2BFE006462E9 /* LaunchScreen.storyboard */,
@@ -233,7 +230,6 @@
 				C104638222DABF8C00C9258B /* FifthViewController.swift in Sources */,
 				C1B62C5A22DA2BFC006462E9 /* SecondViewController.swift in Sources */,
 				C1B62C5622DA2BFC006462E9 /* AppDelegate.swift in Sources */,
-				C104638822DAEA2900C9258B /* TableCell.swift in Sources */,
 				C104637E22DABF1B00C9258B /* ThirdViewController.swift in Sources */,
 				C1B62C5822DA2BFC006462E9 /* FirstViewController.swift in Sources */,
 				C104638022DABF7E00C9258B /* FourthViewController.swift in Sources */,

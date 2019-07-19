@@ -1662,7 +1662,7 @@
                                                     <constraint firstAttribute="width" constant="36" id="xAf-hl-vv1"/>
                                                 </constraints>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="NMC-XR-vzz" appends="YES" id="RIe-QM-hhp"/>
+                                                    <outletCollection property="gestureRecognizers" destination="7W3-00-ieo" appends="YES" id="Uzz-bH-umE"/>
                                                 </connections>
                                             </imageView>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google" translatesAutoresizingMaskIntoConstraints="NO" id="h7F-0k-AbO">
@@ -1957,7 +1957,6 @@
                     <connections>
                         <outlet property="footer" destination="vLV-n7-XLt" id="oNi-UH-tcE"/>
                         <outlet property="header" destination="SI7-83-OhT" id="A4m-Rb-Zds"/>
-                        <outlet property="scrollView" destination="77o-3v-ZKc" id="aZZ-aP-iQj"/>
                         <outlet property="summary" destination="QHn-PL-67E" id="KZw-ED-lMt"/>
                         <outlet property="view" destination="5zQ-Eb-6Au" id="0U4-xI-yad"/>
                         <outletCollection property="labels" destination="heF-Cm-SmA" collectionClass="NSMutableArray" id="7ZE-V2-t2o"/>
@@ -2118,9 +2117,9 @@
                         <action selector="visited:" destination="8TL-e7-r0Q" id="4yd-iP-gXH"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="NMC-XR-vzz" userLabel="Airbnb Tap">
+                <tapGestureRecognizer id="7W3-00-ieo" userLabel="Airbnb Tap">
                     <connections>
-                        <action selector="airbnb:" destination="8TL-e7-r0Q" id="IBv-Vz-aEA"/>
+                        <action selector="airbnb:" destination="8TL-e7-r0Q" id="OFP-cZ-212"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="BOO-IS-iVM" userLabel="Expedia Tap">

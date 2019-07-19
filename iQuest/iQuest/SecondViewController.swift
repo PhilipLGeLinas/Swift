@@ -147,16 +147,16 @@ class SecondViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        scrollView.delegate = self
+        //scrollView.delegate = self
     }
     
     // The scroll view
-    @IBOutlet weak var scrollView: UIScrollView!
-
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print("Movement Detected")
-        currentTag = max
-    }
+//    @IBOutlet weak var scrollView: UIScrollView!
+//
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        print("Movement Detected")
+//        currentTag = max
+//    }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if UIDevice.current.orientation.isLandscape {
@@ -180,44 +180,47 @@ class SecondViewController: UIViewController, UIScrollViewDelegate {
                 break ifMax
             }
             // Fade out footer
-            UIView.animate(withDuration: 0.25) {
+            UIView.animate(withDuration: 0.1) {
                 self.footer.alpha = 0.0
             }
             // Move lower views down
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 self.summary.text = self.descriptions[tag-1]
                 for i in tag...self.max {
                     if (i < self.max) {
-                        UIView.animate(withDuration: 0.5) {
+                        UIView.animate(withDuration: 0.2) {
                             self.views[i].center.y += 192
                         }
                     }
                 }
             }
             // Move footer below current view
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 self.footer.center.y = self.views[tag-1].center.y + 120
-                UIView.animate(withDuration: 0.5) {
+                UIView.animate(withDuration: 0.1) {
                     self.footer.alpha = 1.0
                 }
                 self.currentTag = tag
             }
         // If view is tapped a second time
         } else if (tag == currentTag) {
-            UIView.animate(withDuration: 0.25) {
+            // Fade out footer
+            UIView.animate(withDuration: 0.1) {
                 self.footer.alpha = 0.0
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            // Move lower views up
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 self.summary.text = self.descriptions[self.max-1]
                 for i in tag...self.max {
                     if (i < self.max) {
-                        UIView.animate(withDuration: 0.5) {
+                        UIView.animate(withDuration: 0.2) {
                             self.views[i].center.y -= 192
                         }
                     }
                 }
+                // Move footer below current view
                 self.footer.center.y = 2596
-                UIView.animate(withDuration: 0.5) {
+                UIView.animate(withDuration: 0.1) {
                     self.footer.alpha = 1.0
                 }
                 self.currentTag = self.max
@@ -225,31 +228,35 @@ class SecondViewController: UIViewController, UIScrollViewDelegate {
         // If the footer is not at the bottom
         // and a different view is tapped
         } else {
-            UIView.animate(withDuration: 0.25) {
+            // Fade out footer
+            UIView.animate(withDuration: 0.1) {
                 self.footer.alpha = 0.0
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            // Move lower views up
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 self.summary.text = self.descriptions[tag-1]
                 for i in self.currentTag...self.max {
                     if (i < self.max) {
-                        UIView.animate(withDuration: 0.5) {
+                        UIView.animate(withDuration: 0.2) {
                             self.views[i].center.y -= 192
                         }
                     }
                 }
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
+            // Move lower views down
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 for i in tag...self.max {
                     if (i < self.max) {
-                        UIView.animate(withDuration: 0.5) {
+                        UIView.animate(withDuration: 0.2) {
                             self.views[i].center.y += 192
                         }
                     }
                 }
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            // Move footer below current view
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.footer.center.y = self.views[tag-1].center.y + 120
-                UIView.animate(withDuration: 0.5) {
+                UIView.animate(withDuration: 0.2) {
                     self.footer.alpha = 1.0
                 }
                 self.currentTag = tag
@@ -272,7 +279,7 @@ class SecondViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    @IBAction func airbnb(_ sender: Any) {
+    @IBAction func airbnb(_ sender: UIImageView) {
         let link: String = airbnbLinks[currentTag-1]
         if let url = URL(string: link) {
             UIApplication.shared.open(url)
@@ -307,4 +314,3 @@ class SecondViewController: UIViewController, UIScrollViewDelegate {
         summary.font = summary.font?.withSize(summary.font!.pointSize + 1)
     }
 }
-
