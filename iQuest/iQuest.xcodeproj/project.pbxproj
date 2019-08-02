@@ -17,6 +17,7 @@
 		C1B62C5F22DA2BFE006462E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B62C5E22DA2BFE006462E9 /* Assets.xcassets */; };
 		C1B62C6222DA2BFE006462E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B62C6022DA2BFE006462E9 /* LaunchScreen.storyboard */; };
 		C1B62C6D22DA2BFE006462E9 /* iQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B62C6C22DA2BFE006462E9 /* iQuestTests.swift */; };
+		C1D3290622F490890078B0A8 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D3290522F490890078B0A8 /* Links.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C1B62C6C22DA2BFE006462E9 /* iQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iQuestTests.swift; sourceTree = "<group>"; };
 		C1B62C6E22DA2BFE006462E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1B62C7A22DA2C2E006462E9 /* iQuest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iQuest.entitlements; sourceTree = "<group>"; };
+		C1D3290522F490890078B0A8 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				C1B62C5E22DA2BFE006462E9 /* Assets.xcassets */,
 				C1B62C6022DA2BFE006462E9 /* LaunchScreen.storyboard */,
 				C1B62C6322DA2BFE006462E9 /* Info.plist */,
+				C1D3290522F490890078B0A8 /* Links.swift */,
 			);
 			path = iQuest;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				C1B62C5A22DA2BFC006462E9 /* SecondViewController.swift in Sources */,
 				C1B62C5622DA2BFC006462E9 /* AppDelegate.swift in Sources */,
 				C104637E22DABF1B00C9258B /* ThirdViewController.swift in Sources */,
+				C1D3290622F490890078B0A8 /* Links.swift in Sources */,
 				C1B62C5822DA2BFC006462E9 /* FirstViewController.swift in Sources */,
 				C104638022DABF7E00C9258B /* FourthViewController.swift in Sources */,
 			);
